@@ -59,3 +59,6 @@ With the one-against-one approach, separate classifiers are trained for each dif
 
 ##### One-Vs-One
 
+![iris_1v1](/photos/iris_1v1.JPG)
+![iris_1vA](/photos/iris_1vA.JPG)
+
