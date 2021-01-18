@@ -25,6 +25,37 @@ Out of all the datasets, only E Coli caused MATLAB to warn that the results of t
 
 ##### Iris Data
 
-![iris_1](/photos/iris_1.jpg)
+![iris_1](/photos/iris_1.JPG)
+![iris_2](/photos/iris_2.JPG)
 
+##### Wine Data
+
+![wine_1](/photos/wine_1.JPG)
+![wine_2](/photos/wine_2.JPG)
+
+##### Car Data
+
+![car_1](/photos/car_1.JPG)
+![car_2](/photos/car_2.JPG)
+
+##### E Coli Data
+
+![ecoli_1](/photos/ecoli_1.JPG)
+
+
+## Comparison with multi-class support vector machine in MATLAB (or equivalent)
+
+#### Discussion of one against one (OAO/OVO) versus one against all (OAA/OVA)
+
+
+The main difference between the one-against-one and one-against-all approaches is the number of classifiers that it takes to learn. 
+With the one-against-all approach (the most common used approach), training is done on one classifier per class, having a total of N classifiers. This method is efficient computationally, because only N classifiers are needed. We build one Support Vector Machine per class and train it to distinguish the samples in a single class from the samples in the remaining classes.
+
+For example, for a class I, this method will assume I-labels as positive and the rest as negative. One problem with this approach is that it can lead to imbalanced datasets. This means that a generic Support Vector Machine might not work well using this method. For this reason, it's important that the Support Vector Machines be well tuned when using this approach. It's important to note that the binary classification learners still see imbalanced distributions because of the greater set of negatives, however. 
+
+With the one-against-one approach, separate classifiers are trained for each different pair of labels. We build one Support Vector Machine for each pair of classes. Because of this, the training process is faster. In this approach, we have [(N*(N-1))/2] binary classifiers. For N classes, Support Vector Machines are trained to distinguish the pair samples of one class from the samples of another class. All binary classifiers are tested, then the class with the most votes is promoted at prediction time. Ties are determined by the class with the highest aggregate classification confidence (by summing over the confidence levels of the pairs, computed by the underlying binary classifiers). While this method is more expensive to compute (and slower), it leads to less problems with imbalanced sets. This is especially true of something like kernel algorithms, because they don't scale well with N samples.
+
+#### IRIS Data SVM
+
+##### One-Vs-One
 
