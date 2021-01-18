@@ -61,4 +61,25 @@ With the one-against-one approach, separate classifiers are trained for each dif
 
 ![iris_1v1](/photos/iris_1v1.JPG)
 ![iris_1vA](/photos/iris_1vA.JPG)
+![iris_M](/photos/iris_M.JPG)
+
+#### WINE Data SVM
+
+![wine_1v1](/photos/wine_1v1.JPG)
+![wine_1vA](/photos/wine_1vA.JPG)
+![wine_M](/photos/wine_M.JPG)
+
+#### CAR Data SVM
+
+![car_1v1](/photos/car_1v1.JPG)
+![car_1vA](/photos/car_1vA.JPG)
+![car_M](/photos/car_M.JPG)
+
+#### E COLI Data SVM
+
+![ecoli_1v1](/photos/ecoli_1v1.JPG)
+![ecoli_1vA](/photos/ecoli_1vA.JPG)
+![ecoli_M](/photos/ecoli_M.JPG)
+
+
 
