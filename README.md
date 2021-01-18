@@ -126,3 +126,4 @@ For a quick comparison, we can evaluate the average classification error from th
 
 
 
+Katherine Wooley, Michael Merritt, and Travis Rinehart
