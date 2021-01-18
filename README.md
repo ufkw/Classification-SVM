@@ -25,6 +25,6 @@ Out of all the datasets, only E Coli caused MATLAB to warn that the results of t
 
 ##### Iris Data
 
-![Iris Data](/photos/iris_1.jpg)
+![iris_1](/photos/iris_1.jpg)
 
 
