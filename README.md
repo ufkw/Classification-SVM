@@ -60,26 +60,69 @@ With the one-against-one approach, separate classifiers are trained for each dif
 ##### One-Vs-One
 
 ![iris_1v1](/photos/iris_1v1.JPG)
+
+##### One-Vs-All
+
 ![iris_1vA](/photos/iris_1vA.JPG)
+
+##### Confusion Matrix for Iris at 50/50 ratio with the SVM (One vs all):
+
 ![iris_M](/photos/iris_M.JPG)
 
 #### WINE Data SVM
 
+##### One-Vs-One
+
 ![wine_1v1](/photos/wine_1v1.JPG)
+
+##### One-Vs-All
+
 ![wine_1vA](/photos/wine_1vA.JPG)
+
+##### Confusion Matrix for Wine at 50/50 ratio with the SVM (one vs all):
+
 ![wine_M](/photos/wine_M.JPG)
 
 #### CAR Data SVM
 
+##### One-Vs-One
+
 ![car_1v1](/photos/car_1v1.JPG)
+
+##### One-Vs-All
+
 ![car_1vA](/photos/car_1vA.JPG)
+
+##### Confusion Matrix for Car data at 50/50 ratio with the SVM (one vs all):
+
 ![car_M](/photos/car_M.JPG)
 
 #### E COLI Data SVM
 
+##### One-Vs-One
+
 ![ecoli_1v1](/photos/ecoli_1v1.JPG)
+
+##### One-Vs_All
+
 ![ecoli_1vA](/photos/ecoli_1vA.JPG)
+
+##### Confusion Matrix for E Coli data at 30/70 ratio with the SVM (one vs all):
+
 ![ecoli_M](/photos/ecoli_M.JPG)
+
+
+#### Results of Training
+
+MATLAB has the capability for using the same seed for the randomization, so the randomization for the training patterns and in the cross-evaluation is consistent.
+
+#### Results of Testing
+
+For a quick comparison, we can evaluate the average classification error from the cross-evaluation for the homegrown and the SVM. With the exception of the E Coli data, the SVM performs better. 
+
+##### Average Classification Error
+
+![average_classification_error](/photos/avg_err.JPG)
 
 
 
