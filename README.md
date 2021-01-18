@@ -21,5 +21,10 @@
 
 Out of all the datasets, only E Coli caused MATLAB to warn that the results of the classifier may be inaccurate due to the matrix being close to singular. This warning was not received on the SVM and only on the homegrown, which indicates the sophistication of the SVM.
 
-####Results of Training:
+#### Results of Training:
+
+##### Iris Data
+
+![Iris Data](iris_1.jpg)
+
 
